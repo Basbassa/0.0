@@ -3,6 +3,44 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MASONRY 
+
 .parent {
 display: grid;
 grid-template-columns: repeat(7, 1fr);
@@ -46,3 +84,6 @@ background-color: antiquewhite;}
 
 .div10 { grid-area: 4 / 6 / 5 / 7; 
 background-color: antiquewhite;} 
+
+*/
+
