@@ -1,7 +1,3 @@
-body {
-  background-color: teal;
-}
-
 :root {
   /* BRAND COLORS */
 
@@ -51,7 +47,137 @@ body {
   --BPointDesktopStart: 1200px;
 }
 
+.gallery {
+  position: relative;
+}
 
+@media screen and (min-width: 100px) and (max-width: 767px) {
+  .gallery {
+    display: none;
+  }
+}
+
+.first-half {
+  background-color: var(--secondaryColorStrawberry);
+  width: 100vw;
+  height: 50vh;
+}
+
+.secound-half {
+  background-color: var(--backgroundCOlorLight);
+  width: 100vw;
+  height: 50vh;
+}
+
+.grid-absolute {
+  position: absolute;
+  top: -4%;
+  display: grid;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  gap: 10px;
+  height: 100%;
+}
+
+.x {
+  border-radius: 50px;
+  display: block;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.bigimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-0 {
+  background-color: #adce77;
+  grid-row-start: 3;
+  grid-column-start: 1;
+
+  grid-row-end: 4;
+  grid-column-end: 2;
+}
+.item-1 {
+  background-color: #97b5df;
+  grid-row-start: 3;
+  grid-column-start: 2;
+
+  grid-row-end: 4;
+  grid-column-end: 3;
+}
+.item-2 {
+  background-color: #85fbc9;
+  grid-row-start: 2;
+  grid-column-start: 2;
+
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+.item-3 {
+  background-color: #ed6d76;
+  grid-row-start: 3;
+  grid-column-start: 3;
+
+  grid-row-end: 4;
+  grid-column-end: 4;
+}
+.item-4 {
+  background-color: #e9be59;
+  grid-row-start: 2;
+  grid-column-start: 3;
+
+  grid-row-end: 3;
+  grid-column-end: 5;
+}
+.item-5 {
+  background-color: #5699bb;
+  grid-row-start: 3;
+  grid-column-start: 5;
+
+  grid-row-end: 4;
+  grid-column-end: 6;
+}
+.item-6 {
+  background-color: #b78e79;
+  grid-row-start: 2;
+  grid-column-start: 5;
+
+  grid-row-end: 3;
+  grid-column-end: 6;
+}
+.item-7 {
+  background-color: #dfb75e;
+  grid-row-start: 3;
+  grid-column-start: 6;
+
+  grid-row-end: 4;
+  grid-column-end: 7;
+}
+.item-8 {
+  background-color: #5cc8f8;
+  grid-row-start: 2;
+  grid-column-start: 6;
+
+  grid-row-end: 3;
+  grid-column-end: 7;
+}
+.item-9 {
+  background-color: #5abb5b;
+  grid-row-start: 3;
+  grid-column-start: 7;
+
+  grid-row-end: 4;
+  grid-column-end: 8;
+}
 
 /*
 .gallery {
@@ -72,18 +198,6 @@ body {
 }
 
 
-.first-half {
-  background-color: var(--primaryColorRose);
-  width: 100vw;
-  height: 50vh;
-  
-}
-
-.secound-half {
-  background-color: var(--backgroundCOlorLight);
-  width: 100vw;
-  height: 50vh;
-}
 
  MASONRY 
 
