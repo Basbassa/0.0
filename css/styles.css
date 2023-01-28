@@ -82,19 +82,25 @@
 }
 
 .x {
-  border-radius: 50px;
+  border-radius: 30px;
   display: block;
   align-items: center;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+  height: 100%;
   width: 100%;
 }
 
+.x:hover,
+.bigimg:hover {
+  transform: scale(1.5);
+  transition-timing-function: var(--transitionTimingDefault);
+  transition-duration: var(--transitionDurationDefault);
+}
+
 .y {
-  height: 400px;
   display: block;
+  margin: 0 auto;
 }
 
 .bigimg {
@@ -111,8 +117,6 @@
 
   grid-row-end: 4;
   grid-column-end: 2;
-  position: relative;
-  top: -20%;
 }
 .item-1 {
   background-color: #97b5df;
@@ -121,8 +125,6 @@
 
   grid-row-end: 4;
   grid-column-end: 3;
-  position: relative;
-  top: -40%;
 }
 .item-2 {
   background-color: #85fbc9;
@@ -131,9 +133,8 @@
 
   grid-row-end: 3;
   grid-column-end: 3;
-  position: relative;
-  top: -40%;
 }
+
 .item-3 {
   background-color: #ed6d76;
   grid-row-start: 3;
