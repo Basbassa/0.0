@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   /* BRAND COLORS */
 
@@ -49,6 +55,7 @@
 
 .gallery {
   position: relative;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 100px) and (max-width: 767px) {
@@ -58,13 +65,13 @@
 }
 
 .first-half {
-  background-color: var(--secondaryColorStrawberry);
+  background-color: var(--backgroundCOlorLight);
   width: 100vw;
   height: 50vh;
 }
 
 .secound-half {
-  background-color: var(--backgroundCOlorLight);
+  background-color: var(--whiteColor);
   width: 100vw;
   height: 50vh;
 }
@@ -93,14 +100,21 @@
 
 .x:hover,
 .bigimg:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
   transition-timing-function: var(--transitionTimingDefault);
   transition-duration: var(--transitionDurationDefault);
 }
 
 .y {
+  width: 100%;
+  height: 70%;
   display: block;
   margin: 0 auto;
+}
+
+.big {
+  height: 120%;
+  width: 100%;
 }
 
 .bigimg {
@@ -111,89 +125,87 @@
 }
 
 .item-0 {
-  background-color: #adce77;
   grid-row-start: 3;
   grid-column-start: 1;
-
   grid-row-end: 4;
   grid-column-end: 2;
+  position: relative;
+  top: -15%;
 }
 .item-1 {
-  background-color: #97b5df;
   grid-row-start: 3;
   grid-column-start: 2;
-
   grid-row-end: 4;
   grid-column-end: 3;
+  position: relative;
+  top: 25%;
 }
 .item-2 {
-  background-color: #85fbc9;
   grid-row-start: 2;
   grid-column-start: 2;
-
   grid-row-end: 3;
   grid-column-end: 3;
+  position: relative;
+  bottom: -55%;
 }
 
 .item-3 {
-  background-color: #ed6d76;
   grid-row-start: 3;
   grid-column-start: 3;
-
   grid-row-end: 4;
   grid-column-end: 4;
+  position: relative;
+  top: 55%;
 }
 .item-4 {
-  background-color: #e9be59;
   grid-row-start: 2;
   grid-column-start: 3;
-
   grid-row-end: 3;
   grid-column-end: 5;
+  position: relative;
+  bottom: -35%;
 }
 .item-5 {
-  background-color: #5699bb;
   grid-row-start: 3;
   grid-column-start: 5;
-
   grid-row-end: 4;
   grid-column-end: 6;
+  position: relative;
+  top: 25%;
 }
 .item-6 {
-  background-color: #b78e79;
   grid-row-start: 2;
   grid-column-start: 5;
-
   grid-row-end: 3;
   grid-column-end: 6;
+  position: relative;
+  bottom: -55%;
 }
 .item-7 {
-  background-color: #dfb75e;
   grid-row-start: 3;
   grid-column-start: 6;
-
   grid-row-end: 4;
   grid-column-end: 7;
 }
 .item-8 {
-  background-color: #5cc8f8;
   grid-row-start: 2;
   grid-column-start: 6;
-
   grid-row-end: 3;
   grid-column-end: 7;
+  position: relative;
+  top: 30%;
 }
 .item-9 {
-  background-color: #5abb5b;
   grid-row-start: 3;
   grid-column-start: 7;
-
   grid-row-end: 4;
   grid-column-end: 8;
+  position: relative;
+  top: -15%;
 }
 
 /*
-.gallery {
+.gallery { 
 
 @media screen and (min-width: 100px) and (max-width: 767px) {
   display: none; 
@@ -209,53 +221,5 @@
 
 
 }
-
-
-
- MASONRY 
-
-.parent {
-display: grid;
-grid-template-columns: repeat(7, 1fr);
-grid-template-rows: repeat(7, 1fr);
-grid-column-gap: 5px;
-grid-row-gap: 5px;
 }
- 
-.parent div {
-  width: 200px;
-  height: 200px;
-}
-
-
-.div1 { grid-area: 4 / 1 / 5 / 2; 
-background-color: antiquewhite;}
-
-.div2 { grid-area: 4 / 2 / 5 / 3;
-background-color: antiquewhite; }
-
-.div3 { grid-area: 3 / 2 / 4 / 3; 
-background-color: antiquewhite;}
-
-.div4 { grid-area: 4 / 3 / 5 / 4; 
-background-color: antiquewhite;}
-
-.div5 { grid-area: 3 / 3 / 4 / 4; 
-background-color: antiquewhite;}
-
-.div6 { grid-area: 4 / 4 / 5 / 5; 
-background-color: antiquewhite;}
-
-.div7 { grid-area: 3 / 4 / 4 / 5; 
-background-color: antiquewhite;}
-
-.div8 { grid-area: 4 / 5 / 5 / 6; 
-background-color: antiquewhite;}
-
-.div9 { grid-area: 3 / 5 / 4 / 6; 
-background-color: antiquewhite;}
-
-.div10 { grid-area: 4 / 6 / 5 / 7; 
-background-color: antiquewhite;} 
-
-*/
+ */
