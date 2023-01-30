@@ -59,11 +59,18 @@
   }
 }
 
-.gallery {
-  position: relative;
-  padding: 1rem;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
 }
 
+.gallery {
+  position: relative;
+  background-color: red;
+}
+/*
 .gallery__first-half {
   background-color: var(--backgroundCOlorLight);
   width: 100vw;
@@ -74,7 +81,7 @@
   background-color: var(--whiteColor);
   width: 100vw;
   height: 50vh;
-}
+} */
 
 .gallery__grid-absolute {
   position: absolute;
