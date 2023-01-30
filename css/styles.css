@@ -53,13 +53,23 @@
   --BPointDesktopStart: 1200px;
 }
 
+/*
 @media screen and (min-width: 100px) and (max-width: 767px) {
   .gallery {
     display: none;
   }
-}
+} */
 
-.container {
+@media screen and (min-width: 100px) and (max-width: 767px) {
+  .gallery__img {
+    border-radius: 10px;
+  }
+
+  .gallery__img--bigimg {
+    border-radius: 10px;
+  }
+}
+*/ .container {
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -68,20 +78,13 @@
 
 .gallery {
   position: relative;
-  background-color: red;
+  width: 100%;
+  background-image: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 245, 246, 1) 50%
+  );
 }
-/*
-.gallery__first-half {
-  background-color: var(--backgroundCOlorLight);
-  width: 100vw;
-  height: 50vh;
-}
-
-.gallery__secound-half {
-  background-color: var(--whiteColor);
-  width: 100vw;
-  height: 50vh;
-} */
 
 .gallery__grid-absolute {
   position: absolute;
